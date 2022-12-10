@@ -1,0 +1,5 @@
+#for files
+#for folders
+/.vscode/
+# or /folder_name/*
+# or /folder_name/*.txt     to ignore only txt files in the folder  
