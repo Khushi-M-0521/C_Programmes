@@ -3,3 +3,7 @@
 /.vscode/
 # or /folder_name/*
 # or /folder_name/*.txt     to ignore only txt files in the folder  
+/ds_prog/Test.c
+/advanced/*.exe
+/basics/*.exe
+/ds_prog/*.exe
