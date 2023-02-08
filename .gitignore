@@ -1,3 +1,4 @@
+/.gitignore
 #for files
 #for folders
 /.vscode/
@@ -7,3 +8,5 @@
 /advanced/*.exe
 /basics/*.exe
 /ds_prog/*.exe
+/DS_Project.c
+/DS_Project.exe
