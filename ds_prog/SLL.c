@@ -10,7 +10,7 @@ node f=NULL,r=NULL,l1=NULL,l2=NULL;
 void push(int x)
 {
     node new;
-    new=(node)malloc(sizeof(node));
+    new=(node)malloc(sizeof(struct listc));
     new->info=x;
     new->next=l1;
     l1=new;
