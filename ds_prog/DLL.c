@@ -83,10 +83,10 @@ void dllStack()
 	int ch;
 	node top;
 	top=NULL;
-	printf("\nSTACK OPERATIONS USING DLL\n1. PUSH \n2. POP\n3. DISPLAY\n4. EXIT\n");
+	
 	while(ch !=4)
-	{	
-		printf("Enter your choice stack: ");
+	{	printf("\nSTACK OPERATIONS USING DLL\n1. PUSH \n2. POP\n3. DISPLAY\n4. EXIT\n");
+		printf("Enter your choice: ");
 		scanf("%d",&ch);
 		switch(ch)
 		{
