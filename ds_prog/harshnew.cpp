@@ -89,12 +89,13 @@ class FacultyLogin
     void static Forgot(int i)
     {   
         string b;
+        //cout<<i;
         do{
         cout<<"Enter Your USERNAME"<<endl;
         cin>>b;
         if(b!=sub.subject[i])
             cout<<"Please enter the correct username"<<endl;
-        }while(b==sub.subject[i]);
+        }while(b!=sub.subject[i]);
         cout<<"Enter the new Password"<<endl;
         cin>>FacultyLogin::password[i];
         cout<<"Password Updated Successfully"<<endl;
@@ -103,21 +104,26 @@ class FacultyLogin
     void static update(int i)
     {
         string pass;
-
+        int j,flag=0;
         do{
             cout<<"Enter Your current Password"<<endl;
             cin>>pass;
             if(pass!=FacultyLogin::password[i])
             {   cout<<"Wrong password.\nEnter 1. Try Again\t 2.Forgot Password?\n: ";
-                cin>>i;
-                if(i==2)
-                    Forgot(i);
+                cin>>j;
+                if(j==2)
+                {   
+                     Forgot(i);
+                     flag=1;
+                }
             }
         }while(pass!=FacultyLogin::password[i]);
-
-        cout<<"Enter your new Password"<<endl;
-        cin>>FacultyLogin::password[i];
-        cout<<"Password Updated Successfully"<<endl;
+        if(flag==0)
+        {
+            cout<<"Enter your new Password"<<endl;
+            cin>>FacultyLogin::password[i];
+            cout<<"Password Updated Successfully"<<endl;
+        }
         F_Login(i);
     }
 };
